@@ -128,5 +128,21 @@
     "last_chapter_released": 332,
     "image_url": "https://example.com/blackclover.jpg",
     "id": 13
+  },
+  {
+    "title": "DESDE EL POST",
+    "genre": "Acción, Fantasía",
+    "description": "En un mundo donde la magia lo es todo, dos huérfanos, Asta y Yuno, compiten por convertirse en el próximo Rey Mago, enfrentando desafíos y descubriendo secretos oscuros.",
+    "year_of_publication": 2015,
+    "finished": false,
+    "id": 14
+  },
+  {
+    "title": "DESDE EL POST con auth!!",
+    "genre": "Acción, Fantasía",
+    "description": "En un mundo donde la magia lo es todo, dos huérfanos, Asta y Yuno, compiten por convertirse en el próximo Rey Mago, enfrentando desafíos y descubriendo secretos oscuros.",
+    "year_of_publication": 2015,
+    "finished": false,
+    "id": 15
   }
 ]

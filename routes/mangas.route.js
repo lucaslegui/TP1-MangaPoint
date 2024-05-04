@@ -1,10 +1,13 @@
 import express from "express";
 import fs from "fs";
+import auth from '../middleware/auth.middleware.js'
+/* ?secretKey=campanitas */
 
 const router = express.Router();
 
+
 // traer todos los mangas
-router.get("/", async (req, res) => {
+router.get("/", auth, async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
         const mangas = JSON.parse(data);
@@ -15,7 +18,7 @@ router.get("/", async (req, res) => {
 });
 
 // traer mangas por ID
-router.get("/:id", async (req, res) => {
+router.get("/:id", auth, async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
         const mangas = JSON.parse(data);
@@ -33,7 +36,7 @@ router.get("/:id", async (req, res) => {
 
 // crear manga
 
-router.post("/", async (req, res) => {
+router.post("/", auth, async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
         const mangas = JSON.parse(data);
@@ -48,7 +51,7 @@ router.post("/", async (req, res) => {
 });
 
 // actualizar manga
-router.put("/:id", async (req, res) => {
+router.put("/:id", auth, async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
         const mangas = JSON.parse(data);
@@ -69,7 +72,7 @@ router.put("/:id", async (req, res) => {
 });
 
 //patchear manga
-router.patch("/:id", async (req, res) => {
+router.patch("/:id", auth, async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
         const mangas = JSON.parse(data);
@@ -90,7 +93,7 @@ router.patch("/:id", async (req, res) => {
 });
 
 // borrar manga
-router.delete("/:id", async (req, res) => {
+router.delete("/:id", auth, async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
         let mangas = JSON.parse(data);

@@ -89,4 +89,23 @@ router.patch("/:id", async (req, res) => {
     }
 });
 
+// borrar manga
+router.delete("/:id", async (req, res) => {
+    try {
+        const data = await fs.promises.readFile('./model/mangas.json');
+        let mangas = JSON.parse(data);
+        const manga = mangas.find(p => p.id == req.params.id);
+        if (!manga) {
+            res.status(404).json({error: "Manga no encontrado"});
+        } else {
+            mangas = mangas.filter(p => p.id != req.params.id);
+            await fs.promises.writeFile('./model/mangas.json', JSON.stringify(mangas));
+            res.status(200).json(manga);
+        }
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
+});
+
+
 export default router;

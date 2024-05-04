@@ -1,124 +1,122 @@
-{
-    "mangas": [
-        {
-            "id": 1,
-            "title": "Naruto",
-            "genre": "Acción, Aventura",
-            "description": "Sigue el viaje de un joven ninja entusiasta que busca reconocimiento de sus compañeros y sueña con convertirse en el Hokage, el líder de su aldea.",
-            "year_of_publication": 1999,
-            "finished": true,
-            "last_chapter_released": 700,
-            "image_url": "https://example.com/naruto.jpg"
-        },
-        {
-            "id": 2,
-            "title": "One Piece",
-            "genre": "Aventura, Fantasía",
-            "description": "La historia de Monkey D. Luffy y sus amigos en busca del tesoro definitivo del mundo conocido como 'One Piece' para convertirse en el próximo Rey de los Piratas.",
-            "year_of_publication": 1997,
-            "finished": false,
-            "last_chapter_released": 1053,
-            "image_url": "https://example.com/onepiece.jpg"
-        },
-        {
-            "id": 3,
-            "title": "Attack on Titan",
-            "genre": "Acción, Fantasía Oscura",
-            "description": "En un mundo donde la humanidad reside dentro de enormes ciudades amuralladas para protegerse de los Titanes, criaturas gigantes, la historia sigue el voto de Eren Yeager de erradicar a los Titanes.",
-            "year_of_publication": 2009,
-            "finished": true,
-            "last_chapter_released": 139,
-            "image_url": "https://example.com/attackontitan.jpg"
-        },
-        {
-            "id": 4,
-            "title": "Death Note",
-            "genre": "Misterio, Sobrenatural",
-            "description": "Light Yagami encuentra un cuaderno con poderes para matar y decide usarlo para limpiar el mundo del mal. Sin embargo, sus planes son desafiados por un detective genio conocido como L.",
-            "year_of_publication": 2003,
-            "finished": true,
-            "last_chapter_released": 108,
-            "image_url": "https://example.com/deathnote.jpg"
-        },
-        {
-            "id": 5,
-            "title": "Tokyo Ghoul",
-            "genre": "Horror, Sobrenatural",
-            "description": "Kaneki se encuentra atrapado entre dos mundos cuando se convierte en un ghoul después de un encuentro con una cita que resulta ser un monstruo devorador de humanos.",
-            "year_of_publication": 2011,
-            "finished": true,
-            "last_chapter_released": 143,
-            "image_url": "https://example.com/tokyoghoul.jpg"
-        },
-        {
-            "id": 6,
-            "title": "My Hero Academia",
-            "genre": "Acción, Superhéroes",
-            "description": "En un mundo donde casi todos tienen poderes, Izuku Midoriya sueña con ser héroe a pesar de no tenerlos, hasta que un encuentro con su héroe favorito le cambia la vida.",
-            "year_of_publication": 2014,
-            "finished": false,
-            "last_chapter_released": 362,
-            "image_url": "https://example.com/myheroacademia.jpg"
-        },
-        {
-            "id": 7,
-            "title": "Hunter x Hunter",
-            "genre": "Aventura, Fantasía",
-            "description": "Gon Freecss, en busca de su padre desaparecido, se convierte en un cazador, enfrentándose a múltiples desafíos y descubriendo el oscuro secreto del mundo de los cazadores.",
-            "year_of_publication": 1998,
-            "finished": false,
-            "last_chapter_released": 390,
-            "image_url": "https://example.com/hunterxhunter.jpg"
-        },
-        {
-            "id": 8,
-            "title": "Fullmetal Alchemist",
-            "genre": "Aventura, Fantasía",
-            "description": "Dos hermanos usan la alquimia para intentar resucitar a su madre, pero cuando el experimento sale mal, buscan la piedra filosofal para reparar sus cuerpos dañados.",
-            "year_of_publication": 2001,
-            "finished": true,
-            "last_chapter_released": 108,
-            "image_url": "https://example.com/fullmetalalchemist.jpg"
-        },
-        {
-            "id": 9,
-            "title": "Bleach",
-            "genre": "Acción, Sobrenatural",
-            "description": "Ichigo Kurosaki, un adolescente que puede ver fantasmas, obtiene los poderes de un Shinigami para proteger a los vivos del mundo espiritual.",
-            "year_of_publication": 2001,
-            "finished": true,
-            "last_chapter_released": 686,
-            "image_url": "https://example.com/bleach.jpg"
-        },
-        {
-            "id": 10,
-            "title": "Dragon Ball",
-            "genre": "Acción, Aventura",
-            "description": "Goku y sus amigos defienden la Tierra contra una variedad de villanos, desde guerreros espaciales hasta seres casi omnipotentes en búsqueda de las esferas del dragón.",
-            "year_of_publication": 1984,
-            "finished": true,
-            "last_chapter_released": 519,
-            "image_url": "https://example.com/dragonball.jpg"
-        },
-        {
-            "id": 11,
-            "title": "Fairy Tail",
-            "genre": "Acción, Aventura, Fantasía",
-            "description": "Natsu Dragneel, un mago de Fairy Tail, explora el mundo de Earth Land, enfrentándose a enemigos y buscando los secretos de su pasado.",
-            "year_of_publication": 2006,
-            "finished": true,
-            "last_chapter_released": 545,
-            "image_url": "https://example.com/fairytail.jpg"
-        },
-        {
-            "id": 12,
-            "title": "Black Clover",
-            "genre": "Acción, Fantasía",
-            "description": "En un mundo donde la magia lo es todo, dos huérfanos, Asta y Yuno, compiten por convertirse en el próximo Rey Mago, enfrentando desafíos y descubriendo secretos oscuros.",
-            "year_of_publication": 2015,
-            "finished": false,
-            "last_chapter_released": 332,
-            "image_url": "https://example.com/blackclover.jpg"
-        }
-    ]
-}
+[
+  {
+    "id": 1,
+    "title": "Naruto",
+    "genre": "Acción, Aventura",
+    "description": "Sigue el viaje de un joven ninja entusiasta que busca reconocimiento de sus compañeros y sueña con convertirse en el Hokage, el líder de su aldea.",
+    "year_of_publication": 1999,
+    "finished": true,
+    "last_chapter_released": 700,
+    "image_url": "https://example.com/naruto.jpg"
+  },
+  {
+    "id": 2,
+    "title": "One Piece",
+    "genre": "Aventura, Fantasía",
+    "description": "La historia de Monkey D. Luffy y sus amigos en busca del tesoro definitivo del mundo conocido como 'One Piece' para convertirse en el próximo Rey de los Piratas.",
+    "year_of_publication": 1997,
+    "finished": false,
+    "last_chapter_released": 1053,
+    "image_url": "https://example.com/onepiece.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Attack on Titan",
+    "genre": "Acción, Fantasía Oscura",
+    "description": "En un mundo donde la humanidad reside dentro de enormes ciudades amuralladas para protegerse de los Titanes, criaturas gigantes, la historia sigue el voto de Eren Yeager de erradicar a los Titanes.",
+    "year_of_publication": 2009,
+    "finished": true,
+    "last_chapter_released": 139,
+    "image_url": "https://example.com/attackontitan.jpg"
+  },
+  {
+    "id": 4,
+    "title": "Death Note",
+    "genre": "Misterio, Sobrenatural",
+    "description": "Light Yagami encuentra un cuaderno con poderes para matar y decide usarlo para limpiar el mundo del mal. Sin embargo, sus planes son desafiados por un detective genio conocido como L.",
+    "year_of_publication": 2003,
+    "finished": true,
+    "last_chapter_released": 108,
+    "image_url": "https://example.com/deathnote.jpg"
+  },
+  {
+    "id": 5,
+    "title": "Tokyo Ghoul",
+    "genre": "Horror, Sobrenatural",
+    "description": "Kaneki se encuentra atrapado entre dos mundos cuando se convierte en un ghoul después de un encuentro con una cita que resulta ser un monstruo devorador de humanos.",
+    "year_of_publication": 2011,
+    "finished": true,
+    "last_chapter_released": 143,
+    "image_url": "https://example.com/tokyoghoul.jpg"
+  },
+  {
+    "id": 6,
+    "title": "My Hero Academia",
+    "genre": "Acción, Superhéroes",
+    "description": "En un mundo donde casi todos tienen poderes, Izuku Midoriya sueña con ser héroe a pesar de no tenerlos, hasta que un encuentro con su héroe favorito le cambia la vida.",
+    "year_of_publication": 2014,
+    "finished": false,
+    "last_chapter_released": 362,
+    "image_url": "https://example.com/myheroacademia.jpg"
+  },
+  {
+    "id": 7,
+    "title": "Hunter x Hunter",
+    "genre": "Aventura, Fantasía",
+    "description": "Gon Freecss, en busca de su padre desaparecido, se convierte en un cazador, enfrentándose a múltiples desafíos y descubriendo el oscuro secreto del mundo de los cazadores.",
+    "year_of_publication": 1998,
+    "finished": false,
+    "last_chapter_released": 390,
+    "image_url": "https://example.com/hunterxhunter.jpg"
+  },
+  {
+    "id": 8,
+    "title": "Fullmetal Alchemist",
+    "genre": "Aventura, Fantasía",
+    "description": "Dos hermanos usan la alquimia para intentar resucitar a su madre, pero cuando el experimento sale mal, buscan la piedra filosofal para reparar sus cuerpos dañados.",
+    "year_of_publication": 2001,
+    "finished": true,
+    "last_chapter_released": 108,
+    "image_url": "https://example.com/fullmetalalchemist.jpg"
+  },
+  {
+    "id": 9,
+    "title": "Bleach",
+    "genre": "Acción, Sobrenatural",
+    "description": "Ichigo Kurosaki, un adolescente que puede ver fantasmas, obtiene los poderes de un Shinigami para proteger a los vivos del mundo espiritual.",
+    "year_of_publication": 2001,
+    "finished": true,
+    "last_chapter_released": 686,
+    "image_url": "https://example.com/bleach.jpg"
+  },
+  {
+    "id": 10,
+    "title": "Dragon Ball",
+    "genre": "Acción, Aventura",
+    "description": "Goku y sus amigos defienden la Tierra contra una variedad de villanos, desde guerreros espaciales hasta seres casi omnipotentes en búsqueda de las esferas del dragón.",
+    "year_of_publication": 1984,
+    "finished": true,
+    "last_chapter_released": 519,
+    "image_url": "https://example.com/dragonball.jpg"
+  },
+  {
+    "id": 11,
+    "title": "Fairy Tail",
+    "genre": "Acción, Aventura, Fantasía",
+    "description": "Natsu Dragneel, un mago de Fairy Tail, explora el mundo de Earth Land, enfrentándose a enemigos y buscando los secretos de su pasado.",
+    "year_of_publication": 2006,
+    "finished": true,
+    "last_chapter_released": 545,
+    "image_url": "https://example.com/fairytail.jpg"
+  },
+  {
+    "id": 12,
+    "title": "Black Clover",
+    "genre": "Acción, Fantasía",
+    "description": "En un mundo donde la magia lo es todo, dos huérfanos, Asta y Yuno, compiten por convertirse en el próximo Rey Mago, enfrentando desafíos y descubriendo secretos oscuros.",
+    "year_of_publication": 2015,
+    "finished": false,
+    "last_chapter_released": 332,
+    "image_url": "https://example.com/blackclover.jpg"
+  }
+]

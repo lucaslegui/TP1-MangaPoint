@@ -3,6 +3,7 @@ import fs from "fs";
 
 const router = express.Router();
 
+// traer todos los mangas
 router.get("/", async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
@@ -13,6 +14,7 @@ router.get("/", async (req, res) => {
     }
 });
 
+// traer mangas por ID
 router.get("/:id", async (req, res) => {
     try {
         const data = await fs.promises.readFile('./model/mangas.json');
@@ -29,8 +31,20 @@ router.get("/:id", async (req, res) => {
 });
 
 
-router.post("/", (req, res) => {
-    res.send({data: "mangasRoute"});
+// crear manga
+
+router.post("/", async (req, res) => {
+    try {
+        const data = await fs.promises.readFile('./model/mangas.json');
+        const mangas = JSON.parse(data);
+        const manga = req.body;
+        manga.id = mangas.length + 1;
+        mangas.push(manga);
+        await fs.promises.writeFile('./model/mangas.json', JSON.stringify(mangas));
+        res.status(201).json(manga);
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
 });
 
 router.put("/", (req, res) => {

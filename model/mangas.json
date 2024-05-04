@@ -118,5 +118,15 @@
     "finished": false,
     "last_chapter_released": 332,
     "image_url": "https://example.com/blackclover.jpg"
+  },
+  {
+    "title": "Luki",
+    "genre": "Horror",
+    "description": "En un mundo donde el js lo es todo, dos huérfanos, Asta y Yuno, compiten por convertirse en el próximo Rey del PHP, enfrentando desafíos y descubriendo secretos oscuros.",
+    "year_of_publication": 2015,
+    "finished": false,
+    "last_chapter_released": 332,
+    "image_url": "https://example.com/blackclover.jpg",
+    "id": 13
   }
 ]

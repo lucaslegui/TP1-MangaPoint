@@ -1,34 +1,31 @@
 import express from "express";
-import {promises} from "fs";
+import fs from "fs";
 
 const router = express.Router();
 
-// traer todos los mangas
-
-router.get("/", (req, res) => {
-    promises.readFile('./model/mangas.json')
-        .then(data => {
-            const mangas = JSON.parse(data);
-            res.status(200).json(mangas);
-        })
-        .catch(error => {
-            res.status(500).json({error: error.message});
-        })
+router.get("/", async (req, res) => {
+    try {
+        const data = await fs.promises.readFile('./model/mangas.json');
+        const mangas = JSON.parse(data);
+        res.status(200).json(mangas);
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
 });
 
-// buscar por ID
-
-router.get("/:id", (req, res) => {
-    promises.readFile('./model/mangas.json')
-        .then(data => {
-            const mangas = JSON.parse(data);
-            const manga = mangas.find(manga => manga.id === parseInt(req.params.id));
-
+router.get("/:id", async (req, res) => {
+    try {
+        const data = await fs.promises.readFile('./model/mangas.json');
+        const mangas = JSON.parse(data);
+        const manga = mangas.find(p => p.id == req.params.id);
+        if (!manga) {
+            res.status(404).json({error: "Manga no encontrado"});
+        } else {
             res.status(200).json(manga);
-        })
-        .catch(error => {
-            res.status(500).json({error: error.message});
-        })
+        }
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
 });
 
 

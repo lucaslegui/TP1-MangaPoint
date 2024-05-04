@@ -47,9 +47,28 @@ router.post("/", async (req, res) => {
     }
 });
 
-router.put("/", (req, res) => {
-    res.send({data: "mangasRoute"});
+// actualizar manga
+router.put("/:id", async (req, res) => {
+    try {
+        const data = await fs.promises.readFile('./model/mangas.json');
+        const mangas = JSON.parse(data);
+        const manga = mangas.find(p => p.id == req.params.id);
+        if (!manga) {
+            res.status(404).json({error: "Manga no encontrado"});
+        } else {
+            const newManga = req.body;
+            newManga.id = manga.id;
+            const index = mangas.indexOf(manga);
+            mangas[index] = newManga;
+            await fs.promises.writeFile('./model/mangas.json', JSON.stringify(mangas));
+            res.status(200).json(newManga);
+        }
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
 });
+
+
 
 router.delete("/", (req, res) => {
     res.send({data: "mangasRoute"});

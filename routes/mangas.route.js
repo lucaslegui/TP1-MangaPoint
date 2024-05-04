@@ -68,10 +68,25 @@ router.put("/:id", async (req, res) => {
     }
 });
 
-
-
-router.delete("/", (req, res) => {
-    res.send({data: "mangasRoute"});
+//patchear manga
+router.patch("/:id", async (req, res) => {
+    try {
+        const data = await fs.promises.readFile('./model/mangas.json');
+        const mangas = JSON.parse(data);
+        const manga = mangas.find(p => p.id == req.params.id);
+        if (!manga) {
+            res.status(404).json({error: "Manga no encontrado"});
+        } else {
+            const updatedManga = req.body;
+            for (let patch in updatedManga) {
+                manga[patch] = updatedManga[patch];
+            }
+            await fs.promises.writeFile('./model/mangas.json', JSON.stringify(mangas));
+            res.status(200).json(manga);
+        }
+    } catch (error) {
+        res.status(500).json({error: error.message});
+    }
 });
 
 export default router;

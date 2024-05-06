@@ -7,7 +7,7 @@
     "year_of_publication": 1999,
     "finished": true,
     "last_chapter_released": 700,
-    "image_url": "https://example.com/naruto.jpg"
+    "image_url": "../resources/img/naruto.jpeg"
   },
   {
     "id": 2,
@@ -17,7 +17,7 @@
     "year_of_publication": 1997,
     "finished": false,
     "last_chapter_released": 1053,
-    "image_url": "https://example.com/onepiece.jpg"
+    "image_url": "../resources/img/one_piece.webp"
   },
   {
     "id": 3,
@@ -27,7 +27,7 @@
     "year_of_publication": 2009,
     "finished": true,
     "last_chapter_released": 139,
-    "image_url": "https://example.com/attackontitan.jpg"
+    "image_url": "../resources/img/attack_on_titans.jpeg"
   },
   {
     "id": 4,
@@ -37,7 +37,7 @@
     "year_of_publication": 2003,
     "finished": true,
     "last_chapter_released": 108,
-    "image_url": "https://example.com/deathnote.jpg"
+    "image_url": "../resources/img/death_note.jpg"
   },
   {
     "id": 5,
@@ -47,7 +47,7 @@
     "year_of_publication": 2011,
     "finished": true,
     "last_chapter_released": 143,
-    "image_url": "https://example.com/tokyoghoul.jpg"
+    "image_url": "../resources/img/tokyo_ghoul.jpeg"
   },
   {
     "id": 6,
@@ -57,7 +57,7 @@
     "year_of_publication": 2014,
     "finished": false,
     "last_chapter_released": 362,
-    "image_url": "https://example.com/myheroacademia.jpg"
+    "image_url": "../resources/img/my_hero_academia.jpg"
   },
   {
     "id": 7,
@@ -67,7 +67,7 @@
     "year_of_publication": 1998,
     "finished": false,
     "last_chapter_released": 390,
-    "image_url": "https://example.com/hunterxhunter.jpg"
+    "image_url": "../resources/img/hunter_x_hunter.jpg"
   },
   {
     "id": 8,
@@ -77,7 +77,7 @@
     "year_of_publication": 2001,
     "finished": true,
     "last_chapter_released": 108,
-    "image_url": "https://example.com/fullmetalalchemist.jpg"
+    "image_url": "../resources/img/fullmetal_alchemist.webp"
   },
   {
     "id": 9,
@@ -87,7 +87,7 @@
     "year_of_publication": 2001,
     "finished": true,
     "last_chapter_released": 686,
-    "image_url": "https://example.com/bleach.jpg"
+    "image_url": "../resources/img/bleach.webp"
   },
   {
     "id": 10,
@@ -97,7 +97,7 @@
     "year_of_publication": 1984,
     "finished": true,
     "last_chapter_released": 519,
-    "image_url": "https://example.com/dragonball.jpg"
+    "image_url": "../resources/img/dragon_ball.jpg"
   },
   {
     "id": 11,
@@ -107,7 +107,7 @@
     "year_of_publication": 2006,
     "finished": true,
     "last_chapter_released": 545,
-    "image_url": "https://example.com/fairytail.jpg"
+    "image_url": "../resources/img/fairy_tail.jpg"
   },
   {
     "id": 12,
@@ -117,7 +117,7 @@
     "year_of_publication": 2015,
     "finished": false,
     "last_chapter_released": 332,
-    "image_url": "https://example.com/blackclover.jpg"
+    "image_url": "../resources/img/black_clover.webp"
   },
   {
     "title": "Luki",

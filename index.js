@@ -1,7 +1,7 @@
 import express from "express";
 import mangasRoute from "./routes/mangas.route.js";
-import genreRoute from "./routes/genre.route.js";
 import titleRoute from "./routes/title.route.js";
+import genreRoute from "./routes/genre.route.js";
 
 const app = express();
 

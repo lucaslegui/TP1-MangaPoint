@@ -1,16 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>API de Mangas</title>
+    <title>MangaPoint</title>
+    <link rel="stylesheet" href="./resources/css/stylo.css">
     <!-- Bootstrap CSS -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
 </head>
+
 <body>
+    <div class="dancing-gifs left">
+        <img src="./resources/img/dancegif.gif" class="dancing-gif left" alt="gif dance 1">
+        <img src="./resources/img/luffy-dance-go-luffy.gif" class="dancing-gif left" alt="gif dance 1">
+        <img src="./resources/img/dancegif2.gif" class="dancing-gif right" alt="gift dance 3">
+        <img src="./resources/img/dance7.gif" class="dancing-gif right" alt="gift dance 4">
+        
+    </div>
+
     <div class="container">
+        <header>
+            <video autoplay loop muted playsinline id="videoHeader">
+                <source src="./resources/img/Assassination_Classroom_Dance.mp4" type="video/mp4">
+            </video>
+            <div class="header-content">
+                <h1>TP1 Aplicaciones Híbridas</h1>
+                <p>API RESTful</p>
+            </div>
+        </header>
         <h1 class="mt-5">Bienvenido a la API de Mangas</h1>
-        <p>Esta API permite interactuar con una base de datos de mangas. A continuación, encontrarás los endpoints disponibles y cómo usarlos.</p>
+        <p>Esta API permite interactuar con una base de datos de mangas. A continuación, encontrarás los endpoints
+            disponibles y cómo usarlos.</p>
 
         <div class="mt-3">
             <button id="fetchMangas" class="btn btn-primary">Mostrar todos los Mangas</button>
@@ -21,25 +42,60 @@
         <section class="endpoints">
             <h2>Endpoins</h2>
             <ul class="list-group">
-                <li class="list-group-item">GET /mangas</strong> - Devuelve todos los mangas.</li>
-                <li class="list-group-item">GET /mangas/:id</strong> - Devuelve un manga específico por su ID.</li>
-                <li class="list-group-item">GET /mangas/genre/:genre</strong> - Devuelve mangas filtrados por género.</li>
-                <li class="list-group-item">POST /mangas</strong> - Añade un nuevo manga al catálogo.</li>
-                <li class="list-group-item">PUT /mangas/:id</strong> - Actualiza un manga existente.</li>
-                <li class="list-group-item">PATCH /mangas/:id</strong> - Actualiza un manga existente sin modificar los datos existentes en este.</li>
-                <li class="list-group-item">DELETE /mangas/:id</strong> - Elimina un manga específico.</li>
-              </ul>
+                <li class="list-group-item"><strong>GET</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas - Devuelve todos los mangas.</li>
+                <li class="list-group-item"><strong>GET</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Devuelve un manga específico
+                    por su ID.</li>
+                <li class="list-group-item"><strong>POST</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas - Añade un nuevo manga al
+                    catálogo.</li>
+                <li class="list-group-item"><strong>PUT</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Actualiza un manga
+                    existente.</li>
+                <li class="list-group-item"><strong>PATCH</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Actualiza un manga sin
+                    modificar los demás datos existentes en este.</li>
+                <li class="list-group-item"><strong>DELETE</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Elimina un manga específico.
+                </li>
+                <li class="list-group-item"><strong>GET</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/mangas/genre/:genre - Devuelve mangas
+                    filtrados por género.</li>
+            </ul>
+            <br>
+            <h3>Mangas por orden</h3>
+            <ul class="list-group">
+                <li class="list-group-item"><strong>GET</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/title</strong> - Devuelve mangas
+                    ordenados por título, en orden ascendente.</li>
+                <li class="list-group-item"><strong>GET</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/title/:title</strong> - Devuelve mangas
+                    filtrados por titulo.</li>
+                <li class="list-group-item"><strong>GET</strong> <span
+                        class="font-italic text-success">localhost:3000</span>/genre/:genre</strong> - Devuelve mangas
+                    filtrados por género.</li>
+
+            </ul>
         </section>
     </div>
 
-    <!-- bootstrap footer -->
-    <footer class="footer mt-auto py-3 bg-light">
+    <div class="dancing-gifs right">
+        <img src="./resources/img/dance4.gif" class="dancing-gif left" alt="gif dance 1">
+        <img src="./resources/img/dance5.gif" class="dancing-gif left" alt="gif dance 1">
+        <img src="./resources/img/dance6.gif" class="dancing-gif right" alt="gift dance 3">
+
+        <img src="./resources/img/dance3.gif" class="dancing-gif right" alt="gift dance 4">
+    </div>
+
+    <footer class="footer mt-5 py-3 bg-light">
         <div class="container">
-            <span class="text-muted">Desarrollado por <a href="https://github.com/lucaslegui" target="_blank" rel="noopener">Lucas Leguizamón</a></span>
+            <p class="text-white">
+                Desarrollado por Lucas Leguizamón para la materia <strong>Aplicaciones Híbridas</strong> Profesora Camila Marcos, Comisión <strong>DWN3AP</strong>, Año <strong>2024</strong>.
+            </p>
         </div>
     </footer>
-
-
+    
     <!-- Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
@@ -48,4 +104,5 @@
 
 
 </body>
+
 </html>

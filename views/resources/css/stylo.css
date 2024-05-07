@@ -1,0 +1,77 @@
+header {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    color: rgb(0, 0, 0);
+}
+
+#videoHeader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.dancing-gifs {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    z-index: 5;
+}
+
+.dancing-gifs.left {
+    left: 10px;
+}
+
+.dancing-gifs.right {
+    right: 10px;
+}
+
+.dancing-gif {
+    width: 100px;
+    height: auto;
+}
+
+footer {
+    height: 150px;
+}
+
+.footer {
+    background-image: url('../img/footer.jpg');
+    background-size: cover;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer .container {
+    position: relative;
+    z-index: 2;
+}
+
+.footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}

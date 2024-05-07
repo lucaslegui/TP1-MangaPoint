@@ -126,7 +126,7 @@
     "year_of_publication": 2015,
     "finished": false,
     "last_chapter_released": 332,
-    "image_url": "https://example.com/blackclover.jpg",
+    "image_url": "../resources/img/1.jpg",
     "id": 13
   },
   {
@@ -135,6 +135,7 @@
     "description": "En un mundo donde la magia lo es todo, dos huerfanos, Asta y Yuno, compiten por convertirse en el proximo Rey Mago, enfrentando desafios y descubriendo secretos oscuros.",
     "year_of_publication": 2015,
     "finished": false,
+    "image_url": "../resources/img/2.jpg",
     "id": 14
   },
   {

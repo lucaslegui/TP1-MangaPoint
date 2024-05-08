@@ -1,18 +1,17 @@
 import express from "express";
 import mongoose from "mongoose";
 import "dotenv/config";
-// import mangasRoute from "./routes/mangas.route.js";
-// import titleRoute from "./routes/title.route.js";
-// import genreRoute from "./routes/genre.route.js";
+import mangasRoute from "./routes/mangas.routes.js";
+import adaptationsRoute from "./routes/adaptations.routes.js"
 
-const PORT = process.env.PORT || 3002
+const PORT = process.env.PORT || 3002;
 const app = express();
 
 //conexion a la base de datos
 mongoose
-.connect("mongodb://localhost:27017/mangapoint")
-.then(() => console.log("conectado a MongoDB..."))
-.catch((err) => console.error("no se pudo conectar..."));
+  .connect("mongodb://127.0.0.1:27017/mangapoint")
+  .then(() => console.log("conectado a MongoDB..."))
+  .catch((err) => console.error("no se pudo conectar..."));
 
 app.use(express.static("views"));
 app.use(express.json());
@@ -24,8 +23,7 @@ app.get("/", (req, res) => {
 });
 
 //routers
-// app.use("/mangas", mangasRoute);
-// app.use("/title", titleRoute);
-// app.use("/genre", genreRoute);
+app.use("/mangas", mangasRoute);
+app.use("/adaptations", adaptationsRoute);
 
 app.listen(PORT);

@@ -15,15 +15,15 @@ const mangasSchema = new mongoose.Schema({
   },
   year_of_publication: {
     type: Number,
-    required: true,
+    required: false,
   },
   finished: {
     type: Boolean,
-    required: true,
+    required: false,
   },
   last_chapter_released: {
     type: Number,
-    required: true,
+    required: false,
   },
   image_url: {
     type: String,

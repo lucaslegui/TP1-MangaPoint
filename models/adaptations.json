@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Death Note",
+    "description": "Serie de anime sobre un estudiante que encuentra un cuaderno sobrenatural con el que puede matar personas escribiendo sus nombres.",
+    "type": "anime",
+    "episodes": 37,
+    "release_year": 2006,
+    "end_year": 2006,
+    "active": true
+  },
+  {
+    "title": "Akira",
+    "description": "Película de animación que explora un Tokio postapocalíptico y la psicología de sus jóvenes habitantes con superpoderes.",
+    "type": "animated_movie",
+    "episodes": null,
+    "release_year": 1988,
+    "end_year": 1988,
+    "active": false
+  },
+  {
+    "title": "Attack on Titan",
+    "description": "Serie de anime que sigue a la humanidad luchando por la supervivencia contra gigantescos titanes devoradores de hombres.",
+    "type": "anime",
+    "episodes": 75,
+    "release_year": 2013,
+    "end_year": 2021,
+    "active": true
+  },
+  {
+    "title": "Naruto",
+    "description": "Serie de anime que narra las aventuras de Naruto Uzumaki, un joven ninja que busca reconocimiento y aspira a convertirse en el líder de su aldea.",
+    "type": "anime",
+    "episodes": 220,
+    "release_year": 2002,
+    "end_year": 2007,
+    "active": true
+  },
+  {
+    "title": "One Piece",
+    "description": "Serie de anime sobre las aventuras de Monkey D. Luffy y sus amigos en busca del tesoro legendario conocido como el 'One Piece'.",
+    "type": "anime",
+    "episodes": "más de 1000",
+    "release_year": 1999,
+    "end_year": null,
+    "active": true
+  },
+  {
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "description": "Serie de anime que sigue a dos hermanos alquimistas en su búsqueda por un artefacto que restaurará sus cuerpos tras un fallido ritual alquímico.",
+    "type": "anime",
+    "episodes": 64,
+    "release_year": 2009,
+    "end_year": 2010,
+    "active": true
+  },
+  {
+    "title": "Dragon Ball",
+    "description": "Serie de anime que sigue las aventuras de Goku desde su infancia a través de su adultez mientras explora el mundo y reúne las esferas del dragón.",
+    "type": "anime",
+    "episodes": 153,
+    "release_year": 1986,
+    "end_year": 1989,
+    "active": true
+  },
+  {
+    "title": "Ghost in the Shell",
+    "description": "Película de animación que sigue a la Mayor Motoko Kusanagi, una ciborg que investiga delitos cibernéticos y filosofías existenciales en un futuro distópico.",
+    "type": "animated_movie",
+    "episodes": null,
+    "release_year": 1995,
+    "end_year": 1995,
+    "active": false
+  }
+]

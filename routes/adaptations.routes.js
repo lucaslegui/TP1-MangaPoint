@@ -6,10 +6,13 @@ import {
   updateAdaptation,
   deleteAdaptation
 } from "../controllers/adaptations.controller.js";
+import auth from "../middleware/auth.middleware.js"
+/* ?secretKey=GoingMerry */
+
 const router = express.Router();
 
-//get todos
-router.get("/", async (req, res) => {
+//get todos 🔒
+router.get("/", auth, async (req, res) => {
   try {
     const adaptationsList = await getAdaptations();
     res.json(adaptationsList);
@@ -28,8 +31,8 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-//post crear adaptacion
-router.post("/", async (req, res) => {
+//post crear adaptacion 🔒
+router.post("/", auth, async (req, res) => {
   try {
     const adaptation = await createAdaptation(req);
     res.json(adaptation);
@@ -48,8 +51,8 @@ router.put("/:id", async (req, res) => {
   }
 });
 
-// delete by id (desactivar)
-router.delete("/:id", async (req, res) => {
+// delete by id (desactivar)🔒
+router.delete("/:id", auth, async (req, res) => {
   try {
     const adaptation = await deleteAdaptation(req.params.id);
     res.json(adaptation);

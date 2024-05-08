@@ -1,4 +1,4 @@
-const SECRET_KEY = 'campanitas';
+const SECRET_KEY = 'GoingMerry';
 
 function authMiddleware(req, res, next) {
     console.log("Clave recibida:", req.query.secretKey);
@@ -10,7 +10,6 @@ function authMiddleware(req, res, next) {
         res.status(401).json({ error: "🚨 Acceso no autorizado 🚨" });
     }
 }
-
 
 
 export default authMiddleware

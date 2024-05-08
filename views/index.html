@@ -16,7 +16,7 @@
         <img src="./resources/img/luffy-dance-go-luffy.gif" class="dancing-gif left" alt="gif dance 1">
         <img src="./resources/img/dancegif2.gif" class="dancing-gif right" alt="gift dance 3">
         <img src="./resources/img/dance7.gif" class="dancing-gif right" alt="gift dance 4">
-        
+
     </div>
 
     <div class="container">
@@ -29,8 +29,9 @@
                 <p>API RESTful</p>
             </div>
         </header>
-        <h1 class="mt-5">Bienvenido a la API de Mangas</h1>
-        <p>Esta API permite interactuar con una base de datos de mangas. A continuación, encontrarás los endpoints
+        <h1 class="mt-5">Bienvenido a la API sobre información de Mangas y Anime</h1>
+        <p>Esta API permite interactuar con una base de datos <strong>realizada con MONGODB</strong> de mangas y
+            adpataciones a peliculas y series. A continuación, encontrarás los endpoints
             disponibles y cómo usarlos.</p>
 
         <div class="mt-3">
@@ -40,43 +41,65 @@
         <div id="mangaContainer" class="row mt-3"></div>
 
         <section class="endpoints">
-            <h2>Endpoins</h2>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>GET</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas - Devuelve todos los mangas.</li>
-                <li class="list-group-item"><strong>GET</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Devuelve un manga específico
-                    por su ID.</li>
-                <li class="list-group-item"><strong>POST</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas - Añade un nuevo manga al
-                    catálogo.</li>
-                <li class="list-group-item"><strong>PUT</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Actualiza un manga
-                    existente.</li>
-                <li class="list-group-item"><strong>PATCH</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Actualiza un manga sin
-                    modificar los demás datos existentes en este.</li>
-                <li class="list-group-item"><strong>DELETE</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas/:id - Elimina un manga específico.
-                </li>
-                <li class="list-group-item"><strong>GET</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/mangas/genre/:genre - Devuelve mangas
-                    filtrados por género.</li>
-            </ul>
-            <br>
-            <h3>Mangas por orden</h3>
-            <ul class="list-group">
-                <li class="list-group-item"><strong>GET</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/title</strong> - Devuelve mangas
-                    ordenados por título, en orden ascendente.</li>
-                <li class="list-group-item"><strong>GET</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/title/:title</strong> - Devuelve mangas
-                    filtrados por titulo.</li>
-                <li class="list-group-item"><strong>GET</strong> <span
-                        class="font-italic text-success">localhost:3000</span>/genre/:genre</strong> - Devuelve mangas
-                    filtrados por género.</li>
+            <h2 class="text-center mb-5">Endpoins</h2>
+            <article class="mangas">
+                <h3>Mangas</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>🔒GET</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/mangas - Devuelve todos los mangas.
+                    </li>
+                    <li class="list-group-item"><strong>GET</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/mangas/title - Devulve todos los
+                        mangas
+                        <strong>ordenados alfabéticamente por titulo.</strong>
+                        por su ID.
+                    </li>
+                    <li class="list-group-item"><strong>GET</strong> <span
+                            class="font-italic text-success">localhost:3000</span>mangas/title/:title</strong> -
+                        Devuelve
+                        mangas
+                        filtrados por titulo.</li>
+                    <li class="list-group-item"><strong>GET</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/mangas/genre/:genre - Devuelve mangas
+                        filtrados por género.</li>
+                    <li class="list-group-item"><strong>🔒POST</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/mangas - Añade un nuevo manga al
+                        catálogo.</li>
+                    <li class="list-group-item"><strong>PUT</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/mangas/title/:title - Actualiza un
+                        manga
+                        existente seleccionado previamente por el titulo, se puede cambiar todo su contenido.</li>
+                    <li class="list-group-item"><strong>🔒DELETE</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/mangas/:id - Elimina un manga
+                        específico.
+                    </li>
+                </ul>
+            </article>
+            <article class="anime mt-5">
+                <h3>Anime</h3>
+                <ul class="list-group">
+                    <li class="list-group-item"><strong>🔒GET</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/adaptations - Devuelve peliculas y
+                        series.
+                    </li>
+                    <li class="list-group-item"><strong>GET</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/adaptations/:id - devuelve el anime
+                        por ID.
 
-            </ul>
+                    </li>                 
+                    <li class="list-group-item"><strong>🔒POST</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/adaptations - Añade un nuevo objeto al catalogo (requiere como minimo un titulo, tipo (serie o película) y descripcion).</li>
+                    <li class="list-group-item"><strong>PUT</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/adaptations/:id - Actualiza un
+                        anime
+                        existente seleccionado previamente por el ID, se puede cambiar todo su contenido.</li>
+                    <li class="list-group-item"><strong>🔒DELETE</strong> <span
+                            class="font-italic text-success">localhost:3000</span>/adaptations/:id - Elimina un manga
+                        específico (solo se desactiva).
+                    </li>
+                </ul>
+            </article>
+
         </section>
     </div>
 
@@ -91,11 +114,12 @@
     <footer class="footer mt-5 py-3 bg-light">
         <div class="container">
             <p class="text-white">
-                Desarrollado por Lucas Leguizamón para la materia <strong>Aplicaciones Híbridas</strong> Profesora Camila Marcos, Comisión <strong>DWN3AP</strong>, Año <strong>2024</strong>.
+                Desarrollado por Lucas Leguizamón para la materia <strong>Aplicaciones Híbridas</strong> Profesora
+                Camila Marcos, Comisión <strong>DWN3AP</strong>, Año <strong>2024</strong>.
             </p>
         </div>
     </footer>
-    
+
     <!-- Bootstrap JS y dependencias -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

@@ -64,6 +64,15 @@ async function updateManga(title, body) {
   }
 }
 
+//funcion eliminar manga por id
+async function deleteManga(id) {
+  try {
+    return await mangasModel.findByIdAndDelete(id);
+  } catch (error) {
+    throw error;
+  }
+}
+
 export {
   getMangas,
   createManga,
@@ -71,4 +80,5 @@ export {
   getManga,
   getMangaByGenre,
   getFinishedMangas,
+  deleteManga
 };

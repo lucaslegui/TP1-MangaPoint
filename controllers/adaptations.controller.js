@@ -53,7 +53,7 @@ async function updateAdaptation(id, body) {
   }
 }
 
-//funcion borrar adaptacion
+//funcion borrar adaptacion (desactivar)
 async function deleteAdaptation(id) {
   try {
     const adaptationDelete = await adaptationsModel.findByIdAndUpdate(id, {

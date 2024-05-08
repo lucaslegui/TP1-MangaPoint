@@ -24,6 +24,7 @@ const adaptationsSchema = new mongoose.Schema({
     },
     end_year: {
       type: Number,
+      required: false,
     },
     active: {
       type: Boolean,

@@ -6,7 +6,7 @@ async function getAdaptations() {
   return adaptationsActives;
 }
 
-//funcion obtener adaptacion por id
+//función obtener adaptación por ID
 async function getAdaptationById(id) {
   try {
     const adaptation = await adaptationsModel.findById(id);
